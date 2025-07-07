@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build
+.nuxt/
+.output/
+.nitro/
+dist/
+
+# Generated files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.temp/
+.tmp/
