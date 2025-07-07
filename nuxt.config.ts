@@ -1,25 +1,31 @@
 export default defineNuxtConfig({
+  app: {
+    baseURL: "/vuetify_design_system/",
+  },
   devtools: { enabled: true },
   ssr: false,
-  target: 'static',
+  target: "static",
   generate: {
-    fallback: true
+    fallback: true,
   },
   nitro: {
     prerender: {
-      routes: ['/']
-    }
+      routes: ["/"],
+    },
   },
-  css: ['vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css'],
+  css: [
+    "vuetify/lib/styles/main.sass",
+    "@mdi/font/css/materialdesignicons.min.css",
+  ],
   build: {
-    transpile: ['vuetify']
+    transpile: ["vuetify"],
   },
   vite: {
     define: {
-      'process.env.DEBUG': false,
+      "process.env.DEBUG": false,
     },
     ssr: {
-      noExternal: ['vuetify']
-    }
-  }
-})
+      noExternal: ["vuetify"],
+    },
+  },
+});
